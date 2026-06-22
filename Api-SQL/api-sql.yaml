@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: api-sql
+  namespace: inventario
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: api-sql
+
+  template:
+    metadata:
+      labels:
+        app: api-sql
+
+    spec:
+      containers:
+      - name: api-sql
+
+        image: api-sql:latest
+
+        envFrom:
+        - secretRef:
+            name: app-secret
