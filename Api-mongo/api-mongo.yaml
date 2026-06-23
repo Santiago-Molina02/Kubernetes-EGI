@@ -20,5 +20,7 @@ spec:
     spec:
       containers:
       - name: api-mongo
-
         image: api-mongo:latest
+
+        ports:
+        - containerPort: 8080
