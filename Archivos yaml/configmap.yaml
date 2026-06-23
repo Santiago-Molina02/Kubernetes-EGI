@@ -5,8 +5,8 @@ metadata:
   namespace: inventario
 
 data:
-  SQL_API_URL: "http://api-sql-service"
-  MONGO_API_URL: "http://api-mongo-service"
+  SQL_API_URL: "http://api-sql-service:3000"
+  MONGO_API_URL: "http://api-mongo-service:8080"
   LDAP_SERVER: "192.168.1.10"
   LDAP_PORT: "389"
   LDAP_DOMAIN: "itu.local"
