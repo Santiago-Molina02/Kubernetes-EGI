@@ -10,4 +10,5 @@ spec:
     app: api-mongo
 
   ports:
-  - port: 80
+  - port: 8080
+    targetPort: 8080
