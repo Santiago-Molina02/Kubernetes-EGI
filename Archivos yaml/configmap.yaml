@@ -7,4 +7,6 @@ metadata:
 data:
   SQL_API_URL: "http://api-sql-service"
   MONGO_API_URL: "http://api-mongo-service"
-  LDAP_SERVER: "ldap://192.168.1.100"
+  LDAP_SERVER: "192.168.1.10"
+  LDAP_PORT: "389"
+  LDAP_DOMAIN: "itu.local"
